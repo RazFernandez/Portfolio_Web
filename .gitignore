@@ -1,0 +1,33 @@
+# Node modules
+node_modules/
+
+# Tailwind CLI output (adjust if you use a different path)
+public/css/tailwind.css
+public/css/tailwind.min.css
+*.tmp.css
+
+# Optional: Ignore built HTML/CSS if using a build script
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# dotenv environment files (if used)
+.env
+.env.local
+.env.*.local
+
+# VS Code settings
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Optional: ignore Flowbite plugin builds if applicable
+.flowbite/
+
