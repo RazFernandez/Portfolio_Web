@@ -1,4 +1,5 @@
 /*! tailwindcss v4.1.8 | MIT License | https://tailwindcss.com */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -193,14 +194,14 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-primary-50: #e6f4ed;
+    --font-exo2: "Exo 2", sans-serif;
+    --font-lato: "Lato", sans-serif;
     --color-primary-300: #57b287;
     --color-primary-500: #048c4c;
     --color-primary-600: #047f45;
     --color-primary-700: #036336;
     --color-primary-800: #024d2a;
     --color-dark-bg-600: #02361d;
-    --color-dark-bg-700: #012a17;
     --color-dark-bg-900: #01190d;
   }
 }
@@ -1962,9 +1963,6 @@
   .bg-dark-bg-600 {
     background-color: var(--color-dark-bg-600);
   }
-  .bg-dark-bg-700 {
-    background-color: var(--color-dark-bg-700);
-  }
   .bg-dark-bg-900 {
     background-color: var(--color-dark-bg-900);
   }
@@ -1985,12 +1983,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-gray-900) 50%, transparent);
     }
-  }
-  .bg-primary-50 {
-    background-color: var(--color-primary-50);
-  }
-  .bg-primary-500 {
-    background-color: var(--color-primary-500);
   }
   .bg-transparent {
     background-color: transparent;
@@ -2146,6 +2138,12 @@
   }
   .text-center {
     text-align: center;
+  }
+  .font-exo2 {
+    font-family: var(--font-exo2);
+  }
+  .font-lato {
+    font-family: var(--font-lato);
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -2530,15 +2528,6 @@
       &:hover {
         @media (hover: hover) {
           color: var(--color-blue-700);
-        }
-      }
-    }
-  }
-  .md\:hover\:text-green-600 {
-    @media (width >= 48rem) {
-      &:hover {
-        @media (hover: hover) {
-          color: var(--color-green-600);
         }
       }
     }
