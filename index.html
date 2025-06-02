@@ -10,7 +10,7 @@
 <body class="bg-dark-bg-600">
     <nav class="bg-dark-bg-900">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse pb-0 md:pb-4 xl:pb-0">
                 <img src="assets/images/VentoTech-icon.png" class="h-8" alt="Flowbite Logo" />
                 <span class="self-center text-2xl font-exo2 whitespace-nowrap text-white">MIGUEL FERNANDEZ</span>
             </a>
@@ -33,27 +33,53 @@
                     </li>                    
                     <li>
                         <a href="#"
-                            class="block py-3 px-4 text-white md:hover:bg-primary-500 md:focus:bg-secondary-500 transition duration-300 ease-in-out">ABOUT ME</a>
+                            class="block py-3 px-4 text-white hover:bg-primary-500 focus:bg-secondary-500 transition duration-300 ease-in-out">ABOUT ME</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-3 px-4 text-white md:hover:bg-primary-500 md:focus:bg-secondary-500 transition duration-300 ease-in-out">PORTFOLIO</a>
+                            class="block py-3 px-4 text-white hover:bg-primary-500 focus:bg-secondary-500 transition duration-300 ease-in-out">PORTFOLIO</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-3 px-4 text-white md:hover:bg-primary-500 md:focus:bg-secondary-500 transition duration-300 ease-in-out">SKILLS</a>
+                            class="block py-3 px-4 text-white hover:bg-primary-500 focus:bg-secondary-500 transition duration-300 ease-in-out">SKILLS</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-3 px-4 text-white md:hover:bg-primary-500 md:focus:bg-secondary-500 transition duration-300 ease-in-out">MY PATH</a>
+                            class="block py-3 px-4 text-white hover:bg-primary-500 focus:bg-secondary-500 transition duration-300 ease-in-out">MY PATH</a>
                     </li>
-                    <!-- <li>
-                        <a href="#"
-                            class="hidden lg:block py-3 px-4 text-white md:hover:bg-primary-500 md:focus:bg-secondary-500 transition duration-300 ease-in-out">SOCIAL MEDIA</a>
-                    </li> -->
+                    <!-- Social Media Dropdown menu -->
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                            class="xl:hidden flex items-center justify-between w-full py-3 px-4 text-white hover:bg-primary-500 focus:bg-secondary-500 transition duration-300 ease-in-out md:w-auto ">SOCIAL MEDIA
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar"
+                            class="z-10 hidden font-normal bg-secondary-800 divide-y divide-gray-600 rounded-lg shadow-sm w-44">
+                            <ul class="py-2 text-sm text-gray-200" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/mrjfernandez/" target="_blank"
+                                        class="block px-4 py-2 hover:bg-secondary-600 focus:bg-secondary-500">LinkedIn</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/RazFernandez" target="_blank"
+                                        class="block px-4 py-2 hover:bg-secondary-600 focus:bg-secondary-500">GitHub</a>
+                                </li>
+                                <li>
+                                    <a href="https://medium.com/@RazielFernandez" target="_blank"
+                                        class="block px-4 py-2 hover:bg-secondary-600 focus:bg-secondary-500">Medium</a>
+                                </li>
+                            </ul>
+                        </div> 
+
+                    </li>
                 </ul>
             </div>
-            <div class="w-full md:block md:w-auto" id="navbar-social-items">
+            <div class="w-full hidden xl:block md:w-auto" id="navbar-social-items">
                 <ul class="flex space-x-4 nav-social-media-items">
                     <li>
                         <a href="https://www.linkedin.com/in/mrjfernandez/" target="_blank" class="block py-3 px-4 text-white  md:hover:bg-primary-500 md:focus:bg-secondary-500 transition duration-300 ease-in-out">
