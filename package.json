@@ -1,7 +1,18 @@
 {
+  "author": "Miguel Fernandez",
+  "description": "My personal web portfolio",
+  "name": "portfolio-web-miguel-fernandez",
+  "license":"MIT",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.8",
     "flowbite": "^3.1.2",
     "tailwindcss": "^4.1.8"
+  },
+  "scripts": {
+    "start": "npx @tailwindcss/cli -i styles/entrypoint.css -o styles/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RazFernandez/Portfolio_Web/tree/development"
   }
 }
