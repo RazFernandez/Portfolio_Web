@@ -198,6 +198,7 @@
     --color-primary-50: #e6f4ed;
     --color-primary-100: #b1dbc8;
     --color-primary-300: #57b287;
+    --color-primary-400: #36a370;
     --color-primary-500: #048c4c;
     --color-primary-600: #047f45;
     --color-primary-700: #036336;
@@ -2608,11 +2609,29 @@
       }
     }
   }
+  .md\:hover\:fill-primary-400 {
+    @media (width >= 48rem) {
+      &:hover {
+        @media (hover: hover) {
+          fill: var(--color-primary-400);
+        }
+      }
+    }
+  }
   .md\:hover\:text-blue-700 {
     @media (width >= 48rem) {
       &:hover {
         @media (hover: hover) {
           color: var(--color-blue-700);
+        }
+      }
+    }
+  }
+  .md\:hover\:text-primary-400 {
+    @media (width >= 48rem) {
+      &:hover {
+        @media (hover: hover) {
+          color: var(--color-primary-400);
         }
       }
     }
