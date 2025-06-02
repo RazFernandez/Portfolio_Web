@@ -203,7 +203,10 @@
     --color-primary-700: #036336;
     --color-primary-800: #024d2a;
     --color-secondary-500: #038c7f;
+    --color-dark-bg-300: #557c6a;
+    --color-dark-bg-400: #35624d;
     --color-dark-bg-600: #02361d;
+    --color-dark-bg-700: #012a17;
     --color-dark-bg-900: #01190d;
   }
 }
@@ -1533,6 +1536,9 @@
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
@@ -1712,6 +1718,13 @@
       --tw-space-x-reverse: 0;
       margin-inline-start: calc(calc(var(--spacing) * 3) * var(--tw-space-x-reverse));
       margin-inline-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-4 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 4) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
   .self-center {
@@ -1962,8 +1975,14 @@
   .bg-blue-700 {
     background-color: var(--color-blue-700);
   }
+  .bg-dark-bg-400 {
+    background-color: var(--color-dark-bg-400);
+  }
   .bg-dark-bg-600 {
     background-color: var(--color-dark-bg-600);
+  }
+  .bg-dark-bg-700 {
+    background-color: var(--color-dark-bg-700);
   }
   .bg-dark-bg-900 {
     background-color: var(--color-dark-bg-900);
@@ -1976,6 +1995,9 @@
   }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
+  }
+  .bg-gray-800 {
+    background-color: var(--color-gray-800);
   }
   .bg-gray-900 {
     background-color: var(--color-gray-900);
@@ -2047,6 +2069,9 @@
       fill: white !important;
     }
   }
+  .fill-current {
+    fill: currentcolor;
+  }
   .apexcharts-gridline {
     stroke: var(--color-gray-200) !important;
     .dark & {
@@ -2104,6 +2129,9 @@
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -2533,6 +2561,16 @@
       border-width: 0px;
     }
   }
+  .md\:bg-dark-bg-400 {
+    @media (width >= 48rem) {
+      background-color: var(--color-dark-bg-400);
+    }
+  }
+  .md\:bg-dark-bg-900 {
+    @media (width >= 48rem) {
+      background-color: var(--color-dark-bg-900);
+    }
+  }
   .md\:bg-white {
     @media (width >= 48rem) {
       background-color: var(--color-white);
@@ -2595,11 +2633,23 @@
       }
     }
   }
+  .md\:active\:bg-dark-bg-300 {
+    @media (width >= 48rem) {
+      &:active {
+        background-color: var(--color-dark-bg-300);
+      }
+    }
+  }
   .md\:active\:bg-secondary-500 {
     @media (width >= 48rem) {
       &:active {
         background-color: var(--color-secondary-500);
       }
+    }
+  }
+  .lg\:block {
+    @media (width >= 64rem) {
+      display: block;
     }
   }
   .rtl\:rotate-180 {
@@ -2793,6 +2843,13 @@
     @media (prefers-color-scheme: dark) {
       &:focus {
         --tw-ring-color: var(--color-gray-600);
+      }
+    }
+  }
+  .md\:dark\:bg-dark-bg-400 {
+    @media (width >= 48rem) {
+      @media (prefers-color-scheme: dark) {
+        background-color: var(--color-dark-bg-400);
       }
     }
   }
