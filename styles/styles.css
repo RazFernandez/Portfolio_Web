@@ -196,6 +196,7 @@
     --default-mono-font-family: var(--font-mono);
     --font-exo2: "Exo 2", sans-serif;
     --color-primary-50: #e6f4ed;
+    --color-primary-100: #b1dbc8;
     --color-primary-300: #57b287;
     --color-primary-500: #048c4c;
     --color-primary-600: #047f45;
@@ -2298,6 +2299,12 @@
   .text-gray-900 {
     color: var(--color-gray-900);
   }
+  .text-primary-50 {
+    color: var(--color-primary-50);
+  }
+  .text-primary-100 {
+    color: var(--color-primary-100);
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -2468,6 +2475,11 @@
   .focus\:ring-gray-200 {
     &:focus {
       --tw-ring-color: var(--color-gray-200);
+    }
+  }
+  .focus\:ring-primary-100 {
+    &:focus {
+      --tw-ring-color: var(--color-primary-100);
     }
   }
   .focus\:outline-none {
